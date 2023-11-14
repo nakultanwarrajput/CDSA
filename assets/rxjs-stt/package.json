@@ -1,0 +1,86 @@
+{
+  "_from": "rxjs-stt",
+  "_id": "rxjs-stt@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-7sSuut2GOqSh3kp3HxnktpKoxwqHj3XTSJGu1qrYDK1GmEiYkymtnC/X+dWwHKiynViYNKIUdXMftFLgRaZcYQ==",
+  "_location": "/rxjs-stt",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "rxjs-stt",
+    "name": "rxjs-stt",
+    "escapedName": "rxjs-stt",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rxjs-stt/-/rxjs-stt-0.0.3.tgz",
+  "_shasum": "12d64492540443711621b261657b42266383776f",
+  "_spec": "rxjs-stt",
+  "_where": "/home/decimal/mysaarathi-contract-dsa/mysaarathi-contract-dsa",
+  "author": {
+    "name": "Kostiantyn Palchyk"
+  },
+  "bugs": {
+    "url": "https://github.com/kosich/rxjs-stt/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "RxJS speech recognition wrapper",
+  "devDependencies": {
+    "clean-webpack-plugin": "3.0.0",
+    "rimraf": "3.0.2",
+    "rxjs": "6.6.0",
+    "ts-loader": "8.0.1",
+    "typescript": "3.9.6",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.12",
+    "webpack-merge": "5.0.9"
+  },
+  "es2015": "./dist/es2015/index.js",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/kosich/rxjs-stt#readme",
+  "keywords": [
+    "speech-to-text",
+    "speech recognition",
+    "Web Speech API",
+    "s2t",
+    "rxjs",
+    "javascript",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "name": "rxjs-stt",
+  "peerDependencies": {
+    "rxjs": "6.6.0",
+    "tslib": "2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosich/rxjs-stt.git"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:es2015 && npm run build:cjs && npm run build:types && npm run build:umd && npm run build:umd:min",
+    "build:cjs": "tsc -p configs/tsconfig.cjs.json",
+    "build:es2015": "tsc -p configs/tsconfig.es2015.json",
+    "build:esm": "tsc -p configs/tsconfig.esm.json",
+    "build:types": "tsc -p configs/tsconfig.types.json",
+    "build:umd": "webpack --config configs/webpack.build.js -o dist/rxjs-stt.js",
+    "build:umd:min": "webpack --config configs/webpack.build.min.js -o dist/rxjs-stt.min.js",
+    "clean": "rimraf temp dist",
+    "start": "webpack --config configs/webpack.dev.js"
+  },
+  "sideEffects": false,
+  "types": "./dist/types/index.d.ts",
+  "unpkg": "./dist/rxjs-stt.min.js",
+  "version": "0.0.3"
+}

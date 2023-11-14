@@ -1,0 +1,45 @@
+// Box Shadow
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+  box-shadow: $x-axis $y-axis $blur $color;
+  -webkit-box-shadow: $x-axis $y-axis $blur $color;
+  -moz-shadow: $x-axis $y-axis $blur $color;
+  -o-shadow: $x-axis $y-axis $blur $color;
+}
+
+// .box-shadow {
+//   @include box-shadow ($base-size*4, $base-size*5, $base-size*0, $box-shadow-color);
+
+// }
+
+// .table-shadow {
+//   @include box-shadow ($base-size*1.5, $base-size*1.5, $base-size*3, $table-shadow-color);
+// }
+
+// Border Radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+.border-radius {
+  @include border-radius($base-size * 4);
+}
+
+//------------------------------------------------
+//       Font Style
+// ------------------------------------------------//
+//usage: @include fontStyle($regular, 12px, $green);
+@mixin fontStyle($font-weight, $size, $color: null) {
+  font-weight: $font-weight;
+  font-size: $size;
+  $lh: floor($size * 1.5);
+  color: $color;
+
+  @if $lh % 2 == 0px {
+    line-height: $lh;
+  } @else {
+    line-height: $lh - 1;
+  }
+}

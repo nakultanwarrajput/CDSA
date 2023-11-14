@@ -1,0 +1,1 @@
+{"version":3,"file":"gapi.d.ts","sourceRoot":"","sources":["../../src/gapi.ts"],"names":[],"mappings":"AAEA,QAAA,MAAM,kBAAkB,EAAE,OAAO,iBAAiF,CAAC;AACnH,QAAA,MAAM,kBAAkB,EAAE,OAAO,iBAAiF,CAAC;AACnH,QAAA,MAAM,uBAAuB,EAAE,OAAO,sBAAgG,CAAC;AAEvI,OAAO,EACL,kBAAkB,IAAI,iBAAiB,EACvC,kBAAkB,IAAI,iBAAiB,EACvC,uBAAuB,IAAI,sBAAsB,EAClD,CAAC"}
